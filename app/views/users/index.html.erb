@@ -1,0 +1,8 @@
+<%= link_to("新規登録", "/users/new") %>
+<% @users.each do |user| %>
+  <p>
+    <%= user.name %>
+    <%= user.age %>
+    <%= user.address %>
+  </p>
+<% end %>
